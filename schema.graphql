@@ -1,0 +1,11 @@
+type Block {
+    number: String!
+    hash: String!
+    parentHash: String!
+    nonce: String!
+    transactions: [String!]!
+}
+
+type Query {
+    block(number: String!): Block
+}
